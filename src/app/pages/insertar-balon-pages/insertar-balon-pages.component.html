@@ -1,0 +1,10 @@
+<p>insertar-balon-pages works!</p>
+<form (submit)="insertarBalon(Lleno, marcaDeEmpresa, Tipo)">
+  <label>
+    Lleno: 
+    <input type="checkbox" #Lleno>
+  </label>
+  <input type="text" placeholder="marcaDeEmpresa" #marcaDeEmpresa>
+  <input type="text" placeholder="Tipo" #Tipo>
+  <input type="submit" value="agregar balon">
+</form>

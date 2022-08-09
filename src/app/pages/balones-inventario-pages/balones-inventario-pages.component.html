@@ -1,0 +1,16 @@
+<p>balones-inventario-pages works!</p>
+<div>
+  <div *ngFor = "let balon of balones">
+    <p>
+      {{ balon.Lleno }}
+    </p>
+    <p>
+      {{ balon.marcaDeEmpresa }}
+    </p>
+    <p>
+      {{ balon.Tipo }}
+    </p>
+    <a routerLink="/balones/editar/{{balon.id}}">editar</a>
+    <a routerLink="/balones/eliminar/{{balon.id}}">eliminar</a>
+  </div>
+</div>

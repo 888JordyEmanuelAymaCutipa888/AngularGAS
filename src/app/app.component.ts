@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BalonService } from './services/balon.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularGas';
+  constructor(private balonService: BalonService){
+    this.balonService.getBalones().subscribe(balones=>{console.log(balones)})
+  }
 }
