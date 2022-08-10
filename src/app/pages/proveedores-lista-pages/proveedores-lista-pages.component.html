@@ -1,1 +1,16 @@
 <p>proveedores-lista-pages works!</p>
+<div>
+    <div *ngFor = "let proveedor of proveedores">
+      <p>
+        {{ proveedor.nombre}}
+      </p>
+      <p>
+        {{ proveedor.ruc }}
+      </p>
+      <p>
+        {{ proveedor.direccion }}
+      </p>
+      <a routerLink="/proveedores/editar/{{ proveedor.id }}">editar</a>
+      <a routerLink="/proveedores/eliminar/{{ proveedor.id }}">eliminar</a>
+    </div>
+  </div>
