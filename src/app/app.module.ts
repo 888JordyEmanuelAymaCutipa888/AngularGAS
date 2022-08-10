@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { InsertarBalonPagesComponent } from './pages/insertar-balon-pages/insertar-balon-pages.component';
 import { BalonesInventarioPagesComponent } from './pages/balones-inventario-pages/balones-inventario-pages.component';
 import { ProveedoresListaPagesComponent } from './pages/proveedores-lista-pages/proveedores-lista-pages.component';
+import { AgregarProveedoresPagesComponent } from './pages/agregar-proveedores-pages/agregar-proveedores-pages.component';
 
 const routes: Route[] = [
   {path: 'balones', component: BalonesInventarioPagesComponent},
@@ -18,7 +19,8 @@ const routes: Route[] = [
     AppComponent,
     InsertarBalonPagesComponent,
     BalonesInventarioPagesComponent,
-    ProveedoresListaPagesComponent
+    ProveedoresListaPagesComponent,
+    AgregarProveedoresPagesComponent
   ],
   imports: [
     BrowserModule,
