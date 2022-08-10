@@ -12,7 +12,9 @@ import { AgregarProveedoresPagesComponent } from './pages/agregar-proveedores-pa
 
 const routes: Route[] = [
   {path: 'balones', component: BalonesInventarioPagesComponent},
-  {path: 'balones/agregar', component: InsertarBalonPagesComponent}
+  {path: 'balones/agregar', component: InsertarBalonPagesComponent},
+  {path: 'proveedores', component: ProveedoresListaPagesComponent},
+  {path: 'proveedores/agregar', component: AgregarProveedoresPagesComponent}
 ]
 @NgModule({
   declarations: [
