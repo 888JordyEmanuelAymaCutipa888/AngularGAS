@@ -9,20 +9,27 @@ import { InsertarBalonPagesComponent } from './pages/insertar-balon-pages/insert
 import { BalonesInventarioPagesComponent } from './pages/balones-inventario-pages/balones-inventario-pages.component';
 import { ProveedoresListaPagesComponent } from './pages/proveedores-lista-pages/proveedores-lista-pages.component';
 import { AgregarProveedoresPagesComponent } from './pages/agregar-proveedores-pages/agregar-proveedores-pages.component';
+import { TrabajadoresInventarioPagesComponent } from './pages/trabajadores-inventario-pages/trabajadores-inventario-pages.component';
+import { InsertarTrabajadorPagesComponent } from './pages/insertar-trabajador-pages/insertar-trabajador-pages.component';
 
 const routes: Route[] = [
   {path: 'balones', component: BalonesInventarioPagesComponent},
   {path: 'balones/agregar', component: InsertarBalonPagesComponent},
   {path: 'proveedores', component: ProveedoresListaPagesComponent},
-  {path: 'proveedores/agregar', component: AgregarProveedoresPagesComponent}
+  {path: 'proveedores/agregar', component: AgregarProveedoresPagesComponent},
+  {path: 'trabajadores', component: TrabajadoresInventarioPagesComponent},
+  {path: 'trabajadores/agregar', component: InsertarTrabajadorPagesComponent}
 ]
+
 @NgModule({
   declarations: [
     AppComponent,
     InsertarBalonPagesComponent,
     BalonesInventarioPagesComponent,
     ProveedoresListaPagesComponent,
-    AgregarProveedoresPagesComponent
+    AgregarProveedoresPagesComponent,
+    TrabajadoresInventarioPagesComponent,
+    InsertarTrabajadorPagesComponent,
   ],
   imports: [
     BrowserModule,

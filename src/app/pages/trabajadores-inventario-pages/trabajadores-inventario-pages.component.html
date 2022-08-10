@@ -1,0 +1,16 @@
+<p>trabajadores-inventario-pages works!</p>
+<div>
+    <div *ngFor = "let trabajador of trabajadores">
+      <p>
+        {{ trabajador.nombre }}
+      </p>
+      <p>
+        {{ trabajador.recibo_honorarios }}
+      </p>
+      <p>
+        {{ trabajador.pago }}
+      </p>
+      <a routerLink="/trabajadores/editar/{{trabajador.id}}">editar</a>
+      <a routerLink="/trabajadores/eliminar/{{trabajador.id}}">eliminar</a>
+    </div>
+  </div>
