@@ -16,7 +16,7 @@ export class InsertarTrabajadorPagesComponent implements OnInit {
   insertarTrabajador(nombre: any, recibo_honorarios: any, pago: any){
 
     this.TrabajadoresService.agregarTrabajador(nombre.value, recibo_honorarios.value, pago.value).subscribe(trabajador => {
-      this.router.navigate(['/trabajadores'])
+      this.router.navigate(['/trabajadores/'])
     })
 
     return false

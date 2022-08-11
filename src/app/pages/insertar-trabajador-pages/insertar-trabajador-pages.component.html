@@ -1,10 +1,7 @@
 <p>insertar-trabajador-pages works!</p>
 <form (submit)="insertarTrabajador(nombre, recibo_honorarios, pago)">
-    <label>
-      Nombre: 
-      <input type="text" #nombre>
-    </label>
-    <input type="text" placeholder="recibo_honorarios" #recibo_honorarios>
+    <input type="text" placeholder="nombre" #nombre>
+    <input type="number" placeholder="recibo_honorarios" #recibo_honorarios>
     <input type="number" placeholder="pago" #pago>
     <input type="submit" value="agregar trabajador">
   </form>
