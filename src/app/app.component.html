@@ -1,11 +1,12 @@
-<div>
-  <a routerLink="/balones">inventario de balones</a>
-  <a routerLink="/balones/agregar">agregar balon</a>
-  <a routerLink="/proveedores">lista de proveedores</a>
-  <a routerLink="/proveedores/agregar">agregar proveedor</a>
-</div>
-<div>
-  <a routerLink="/trabajadores">inventario de trabajadores</a>
-  <a routerLink="/trabajadores/agregar">agregar trabajador</a>
-</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="navbar-brand">
+    <a class="navbar-brand" routerLink="/">HOME</a>
+    <a class="navbar-brand" routerLink="/balones">Todos los balones </a>
+    <a class="navbar-brand" routerLink="/proveedores">Proveedores</a>
+    <a class="navbar-brand" routerLink="/trabajadores">Trabajadores</a>
+  </div>
+  ...
+</nav>
+<br>
+
 <router-outlet></router-outlet>

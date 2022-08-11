@@ -1,16 +1,33 @@
-<p>proveedores-lista-pages works!</p>
+<h3>Añada un nuevo proveedor <a routerLink="/proveedores/agregar" class="badge bg-secondary">click aquí</a></h3>
+<br>
+
+...
 <div>
-    <div *ngFor = "let proveedor of proveedores">
-      <p>
-        {{ proveedor.nombre}}
-      </p>
-      <p>
-        {{ proveedor.ruc }}
-      </p>
-      <p>
-        {{ proveedor.direccion }}
-      </p>
-      <a routerLink="/proveedores/editar/{{ proveedor.id }}">editar</a>
-      <a routerLink="/proveedores/eliminar/{{ proveedor.id }}">eliminar</a>
-    </div>
-  </div>
+<table class="table table-success table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">RUC</th>
+      <th scope="col">Dirección</th>
+      <th scope="col">Editar</th>
+      <th scope="col">Eliminar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let proveedor of proveedores">
+      <th scope="row"> {{ proveedor.id }}</th>
+      <td>{{ proveedor.nombre }}</td>
+      <td>{{ proveedor.ruc }}</td>
+      <td>{{ proveedor.direccion }}</td>
+      <td>
+        <a routerLink="/proveedores/editar/{{proveedor.id}}">editar</a>
+      </td>
+      <td>
+        <a routerLink="/proveedores/eliminar/{{proveedor.id}}">eliminar</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
